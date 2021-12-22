@@ -1,0 +1,289 @@
+:root {
+  background-image: linear-gradient(#2f3564, #12173b);
+  font-size: 70%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1 rem;
+}
+.box-static #img1 {
+  position: absolute;
+  z-index: -1;
+  width: 5rem;
+  top: 20vh;
+  left: 10vw;
+}
+
+.box-static #img2 {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+  width: 10rem;
+  top: 70vh;
+  left: 1vw;
+}
+
+.box-static #img3 {
+  position: absolute;
+  z-index: -1;
+  width: 11rem;
+  top: 30vh;
+  left: 76vw;
+}
+
+.box-static #img4 {
+  /*laranja-amarelo*/
+  position: absolute;
+  z-index: -1;
+  width: 2rem;
+  top: 76rem;
+  left: 30rem;
+}
+
+.box-static #img5 {
+  /*azul*/
+  position: absolute;
+  z-index: -1;
+  width: 1rem;
+  top: 60rem;
+  left: 11rem;
+}
+
+.box-static #img6 {
+  /*amarelo*/
+  position: absolute;
+  z-index: -1;
+  width: 1rem;
+  top: 57vh;
+  left: 85%;
+}
+
+.box-static #img7 {
+  /*laranja*/
+  position: absolute;
+  z-index: -1;
+  width: 1rem;
+  top: 55vh;
+  left: 20%;
+}
+
+.box-animation #img8 {
+  /*argola*/
+  position: absolute;
+  z-index: -1;
+  width: 2.2rem;
+  top: 35vh;
+  left: 40vw;
+}
+
+.box-static #img9 {
+  /*argola*/
+  position: absolute;
+  z-index: -1;
+  width: 0.3rem;
+  top: 50vh;
+  left: 28vw;
+}
+
+.box-static #img10 {
+  /*argola*/
+  position: absolute;
+  z-index: -1;
+  width: 0.3rem;
+  top: 38vh;
+  left: 55%;
+}
+
+.box-static #img11 {
+  /*argola*/
+  position: absolute;
+  z-index: -1;
+  width: 0.5rem;
+  top: 38vh;
+  left: 50%;
+}
+
+.box-static #img12 {
+  /*argola*/
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  width: 3rem;
+  top: 39vh;
+  left: 52vw;
+}
+
+.box-static #img13 {
+  /*argola*/
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  width: 9rem;
+  top: 5vh;
+  left: 50vw;
+}
+
+.box-static #img14 {
+  /*argola*/
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  width: 6rem;
+  top: 80vh;
+  left: 78vw;
+}
+
+.planet {
+  position: relative;
+  z-index: -1;
+  top: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 10rem;
+  height: auto;
+}
+
+.rocket {
+  position: relative;
+  z-index: -1;
+  top: 11rem;
+  left: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 11rem;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5.5rem;
+  font-weight: 600;
+  text-shadow: 0.2rem 0.4rem 0.7rem #12173b;
+  color: white;
+  margin-bottom: 5rem;
+  z-index: 1;
+}
+
+h1 > span {
+  font-size: 8rem;
+  font-weight: 800;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+/* UTILITIES */
+
+.container {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* BUTTONS */
+
+.button {
+  font-size: 165%;
+  font-weight: bold;
+  padding: 1.2rem 0;
+  width: 20rem;
+  text-align: center;
+  border-radius: 1.2rem;
+  margin-bottom: 1.4rem;
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(45deg, #dd6094, #b260dd);
+  box-shadow: 0.1rem 0.5rem 0.5rem 0 rgba(7, 31, 61, 0.326);
+}
+
+.button:hover {
+  cursor: pointer;
+  border: 0.1rem solid white;
+  box-shadow: 0 0.3rem 1.4rem 0.1rem rgba(129, 213, 255, 0.231);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.button[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* FORMS */
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+  font-weight: 700;
+  font-size: 150%;
+  margin-bottom: 2rem;
+  width: 20rem;
+  padding: 1.4rem;
+  border-radius: 3rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  font-size: 120%;
+  color: rgb(172, 172, 172);
+  text-align: center;
+}
